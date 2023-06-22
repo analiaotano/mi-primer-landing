@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+
+<html lang="es">
+<head> <title>PAGINA "NUNCBA NFT" [CLASE 8 (24/04/23): FLEX- VERCEL-APP]</title>
+
+        <meta charset="utf-8"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="vieport" content="width=device-width, initial-scale=1.0"> 
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="mediaqueries.css">
+        <link rel="stylesheet" href="animaciones.css">
+
+
+        <!-------agregamos cdn de font awesome para los iconos: link de cdn: https://cdnjs.com/libraries-------->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />">
+       
+</head>
+
+
+<body>
+
+    <header>
+        <!--<img src="./assets/pastor.jpg" alt="poner descripcion de la página, ayuda al SEO y por ende, al posicionamiento de la página" class="logo">-->
+
+        <i class="fa-solid fa-heart"></i>
+
+        <nav class="navbar">
+
+
+
+
+<!--  clase 1.11: mediaqueries --> 
+
+            <label for="menu-toggle" class="menu-label">
+               <!--<img src="./assets/menu-hamburguesa.png" alt="" class="menu-icon">-->
+
+               <i class="fa-sharp fa-solid fa-bars"></i>
+            </label>
+            <input type="checkbox" name="" id="menu-toggle">
+ 
+<!--  clase 1.11.  --> 
+
+
+
+
+            <ul class="navbar-list">
+                <li> <a href="#hero"> Inicio</a></li>
+                <li><a href="#info">Quiénes somos</a></li>
+                <li><a href="#discover">Proyectos</a></li>
+                <li><a href="#products">Redes</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+        <!-- <img src="./assets/mensaje.png" alt="card logo" class="cart-icon">  -->
+
+
+
+
+        <!--  clase 1.11: mediaqueries --> 
+
+        <label for="cart-toggle" class="cart-label">
+           <!--------<img src="./assets/carrito.png" alt="" class="cart-icon"> -------> 
+
+
+           <!-------agregamos cdn de font awesome-------->
+           <i class="fa-sharp fa-solid fa-cart-shopping"></i>
+        </label>
+
+
+        <input type="checkbox" name="" id="cart-toggle">
+
+
+        <!--cart -->
+        <div class="cart">
+            <h2>Tus NFTs</h2>
+
+            <!-- contenido del carrito-->
+            <div class="cart-item">
+                <img src="./assets/carrito.jpg" alt="Nft del carrito">
+                <div class="item-info">
+                    <h3 class="item-title">Messi</h3>
+                    <p class="item-bid">Current bid</p>
+                    <span class="item-price">4.8 eth</span>
+                </div>
+                <div class="item-handler">
+                    <span class="quantity-handler down">-</span>
+                    <span class="item-quantity"></span>
+                    <span class="quantity-handler up">+</span>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <img src="./assets/carrito.jpg" alt="Nft del carrito">
+                <div class="item-info">
+                    <h3 class="item-title">Messi</h3>
+                    <p class="item-bid">Current bid</p>
+                    <span class="item-price">4.8 eth</span>
+                </div>
+                <div class="item-handler">
+                    <span class="quantity-handler down">-</span>
+                    <span class="item-quantity"></span>
+                    <span class="quantity-handler up">+</span>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <img src="./assets/carrito.jpg" alt="Nft del carrito">
+                <div class="item-info">
+                    <h3 class="item-title">Messi</h3>
+                    <p class="item-bid">Current bid</p>
+                    <span class="item-price">4.8 eth</span>
+                </div>
+                <div class="item-handler">
+                    <span class="quantity-handler down">-</span>
+                    <span class="item-quantity"></span>
+                    <span class="quantity-handler up">+</span>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <img src="./assets/carrito.jpg" alt="Nft del carrito">
+                <div class="item-info">
+                    <h3 class="item-title">Messi</h3>
+                    <p class="item-bid">Current bid</p>
+                    <span class="item-price">4.8 eth</span>
+                </div>
+                <div class="item-handler">
+                    <span class="quantity-handler down">-</span>
+                    <span class="item-quantity"></span>
+                    <span class="quantity-handler up">+</span>
+                </div>
+            </div>
+
+            <span class="divider"></span>
+            <div class="cart-total">
+                <p>Total:</p>
+                <span>18.3 eth</span>
+            </div>
+            <button class="btn-add">Comprar</button>
+
+        </div>
+
+        <!--  clase 1.14.  --> 
+        <!-------- agregamos div para efecto glass de background------->
+    <div class="overlay"></div>
+
+
+        
+        </nav>
+
+    </header>
+
+
+    <main>
+        <section id="hero">
+            <div class="hero-info">
+                <h1>Descubre la nueva era de <span>Crypto  </span> </h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illum ullam ut quae voluptate quos asperiores porro vero repellat cum excepturi, sapiente consequuntur ipsam aut pariatur nam esse inventore corporis nobis? <strong> HOLA! </strong> dvdgbgrnhtrsd</p>
+                <a href="#">Be Nucber</a>
+            </div>
+
+            <div class="hero-card">
+                <img src="./assets/pastor.jpg" alt="imagen de la sección hero-card">
+
+                <div class="hero-card-info">
+
+                    <div class="hero-card-top">
+                        <h3>"The greatest of all time xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"</h3>
+                        <span>10</span>
+                    </div>
+
+                    <div class="hero-card-bottom">
+
+                        <div class="hero-card-creator">
+                            <img src="./assets/pastor2.jpg" alt="">
+                            <div class="creator-info">
+                                <p>Creator</p>
+                                <p>CarlesReact</p>
+                            </div>
+                        </div>
+                        
+                        <div class="hero-card-price">
+                            <p>Value</p>
+                            <span>9 ETH</span>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+<!--CLASE MIERCOLES 26/04/23: 1.9: PRACTICA FLEXBOX- NUCBA NFT II- DISEÑO WEB -->
+
+        <section id="info">
+            <h2>Crea, aprende y comparte los NFTs</h2>
+            <div class="info-card-container" >
+                <div class="info-card" >
+                    <img src="./assets/mensaje.png" alt="">
+                    <h3>Agrega tus NFTs</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque cupiditate aperiam fugit impedit ad unde quo voluptatem quam rerum, est esse possimus ipsa id sed ex a? In, vitae harum?</p>
+                </div>
+
+                <div class="info-card">
+                    <img src="./assets/mensaje.png" alt="">
+                    <h3>Agrega tus NFTs</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium commodi aliquam aut illo assumenda fugiat incidunt delectus quis veniam explicabo. Aliquid corrupti perferendis et voluptatem voluptatibus fugiat pariatur amet cumque?</p>
+                </div>
+
+                <div class="info-card">
+                    <img src="./assets/mensaje.png" alt="">
+                    <h3>Agrega tus NFTs</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur fuga velit vero quibusdam animi fugit, ex porro perspiciatis suscipit natus quae cum. Laboriosam, sequi. Ab deleniti accusantium dolorum ea ad.</p>
+                </div>
+            </div>
+        </section>
+
+        
+
+
+        <section id="discover" >
+
+            <div class="discover-info">
+                <h2>Descubre una nueva era de colecciones</h2>
+                <div class="discover-text">
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis sint, voluptate unde vero hic atque perspiciatis error quia ipsam architecto laborum consectetur accusantium quisquam impedit quae, voluptatem quos cum consequatur.</p>
+                    <a href="#"> Empezar ahora</a>
+                </div>
+            </div>
+
+
+            <div class="discover-cards">
+                <img src="./assets/pastor.jpg" alt="">
+                <img src="./assets/pastor2.jpg" alt="">
+                <img src="./assets/pastor.jpg" alt="">
+            </div>
+
+        </section>
+
+
+
+
+        <section id="products" >
+                <h2>Hot en NFTs</h2>
+                <div class="categories">
+                    <button class="category active" >Todas</button>
+                    <button class="category" >Futbol</button>
+                    <button class="category">Musica</button>
+                    <button class="category">Películas</button>
+                    <button class="category">Políticos</button>
+                </div>
+
+
+                <div class="products-container">
+
+                    <div class="product">
+                        <img src="./assets/pastor.jpg" alt="">
+                        <div class="product-info">
+                            <div class="product-top">
+                                <h3>Diego Maradona</h3>
+                                <p>Current bid</p>
+                            </div>
+                            <div class="product-mid">
+                                <div class="product-user">
+                                    <img src="./assets/pastor2.jpg" alt="">
+                                    <p>@kirik</p>
+                                </div>
+                                <span>5.09 eTH</span>
+                            </div>
+                            <div class="product-bot">
+                                <div class="after-time">
+                                    <img src="./assets/pastor.jpg" alt="">
+                                    <p>05:12:07</p>
+                                </div>
+                                <button class="btn-add" > Add</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <img src="./assets/pastor.jpg" alt="">
+                        <div class="product-info">
+                            <div class="product-top">
+                                <h3>Diego Maradona</h3>
+                                <p>Current bid</p>
+                            </div>
+                            <div class="product-mid">
+                                <div class="product-user">
+                                    <img src="./assets/pastor2.jpg" alt="">
+                                    <p>@kirik</p>
+                                </div>
+                                <span>5.09 eTH</span>
+                            </div>
+                            <div class="product-bot">
+                                <div class="after-time">
+                                    <img src="./assets/pastor.jpg" alt="">
+                                    <p>05:12:07</p>
+                                </div>
+                                <button class="btn-add" > Add</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <img src="./assets/pastor.jpg" alt="">
+                        <div class="product-info">
+                            <div class="product-top">
+                                <h3>Diego Maradona</h3>
+                                <p>Current bid</p>
+                            </div>
+                            <div class="product-mid">
+                                <div class="product-user">
+                                    <img src="./assets/pastor2.jpg" alt="">
+                                    <p>@kirik</p>
+                                </div>
+                                <span>5.09 eTH</span>
+                            </div>
+                            <div class="product-bot">
+                                <div class="after-time">
+                                    <img src="./assets/pastor.jpg" alt="">
+                                    <p>05:12:07</p>
+                                </div>
+                                <button class="btn-add" > Add</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product">
+                        <img src="./assets/pastor.jpg" alt="">
+                        <div class="product-info">
+                            <div class="product-top">
+                                <h3>Diego Maradona</h3>
+                                <p>Current bid</p>
+                            </div>
+                            <div class="product-mid">
+                                <div class="product-user">
+                                    <img src="./assets/pastor2.jpg" alt="">
+                                    <p>@kirik</p>
+                                </div>
+                                <span>5.09 eTH</span>
+                            </div>
+                            <div class="product-bot">
+                                <div class="after-time">
+                                    <img src="./assets/pastor.jpg" alt="">
+                                    <p>05:12:07</p>
+                                </div>
+                                <button class="btn-add" > Add</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+        </section>
+    </main>
+    
+
+
+
+    <footer id="contact">
+
+        <div>
+            <ul  class="footer-links" >
+                <li> <a href="">Términos de uso</a> </li>
+                <li> <a href=""> Trabajá con nosotros</a></li>
+                <li> <a href=""> Soporte</a></li>
+            </ul>
+        </div>
+
+            <p> Hecho con ♥ en <span>NUCBACRYPTO</span> </p>
+ 
+    </footer>
+
+
+
+</body>
+</html>

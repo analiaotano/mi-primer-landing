@@ -1,0 +1,271 @@
+
+:root {
+    /* bg colors */
+    --background: rgb(33, 32, 32); 
+    --primary: rgb(29, 29, 230); 
+    --secondary: rgb(75, 72, 72);
+    --btn-bg: rgb(15, 13, 13);
+    --bg-azul-10: rgb(162, 237, 241);
+    --bg-white: white;
+    --nav-bg: rgb(16, 15, 15);
+
+/* text colors */
+--text-gray: rgb(193, 189, 189);
+--text-white: rgb(247, 245, 245);
+
+/* decoration */
+--fire: rgb(255, 153, 0);
+--electric: rgb(217, 211, 211);
+}
+
+
+
+
+
+
+
+
+/* clase 1.11 (PARA LOS MEDIAQUERIES: */
+
+
+@media (max-width: 992px) {
+/* tablet*/
+
+.navbar  {
+    gap: 10px;
+}
+
+.cart-icon {
+    height: 33px;
+    margin-right: 0rem;
+    margin-top: 4px;
+}
+
+.navbar-list {
+    position: absolute;   /*para que se despliegue el menu hacia abajo cuando achicamos la pantalla y no nos quede arriba superponièndose con el navbar */
+    top: 65px; /* altura del navbar */
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    flex-direction: column;
+    background-color: var(--btn-bg);
+    border: 2px solid var(--electric);
+    border-top: 0;
+    border-radius: 0 0 15px 15px;
+    align-items: flex-start;
+    padding: 45px 30px;
+    gap: 25px;
+    z-index: 2;
+    display: none; /*activarlo para que funcione el menu desplegablge en mq 992 (para que lo muestre) */
+}
+
+
+.navbar-list a {
+    font-size: 18px;
+}
+
+.menu-label {
+    display: flex;
+    order: 2;
+    cursor: pointer;
+}
+
+.menu-label img {
+    height: 20px;
+    width: 25px;
+
+}
+
+#menu-toggle:checked+.navbar-list {
+    display: flex; /*me abre el menù cuando està checkeado (cuando lo clickeo) se muestra el menu */
+    background-color: var(--secondary);
+}
+
+
+
+.hero-info {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+
+.hero-info h1 {
+    width: 90%;
+    max-width: 500px;
+    min-width: unset; /* le decimos que resetea al valor que viene por default */
+
+}
+
+
+.hero-info p {
+    width: 60%;
+    max-width: 600px;
+}
+
+.hero-card {
+    display: none;
+}
+
+
+#info h2 {
+    text-align: center;
+    width: 80%;
+}
+
+
+.info-cards-container {
+    max-width: 80%;
+}
+
+
+
+
+/*section discover */
+
+#discover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.discover-info {
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.discover-cards {
+    flex-direction: column;
+}
+
+.discover-cards img {
+    width: 100%;
+}
+
+
+
+/*section products */
+
+.categories {
+    flex-wrap: wrap;
+    max-width: 390px;
+}
+
+.category {
+    width: 120px;
+}
+}
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+    /* mobile*/
+
+.cart {
+    left: 0%;
+    width: 100%;
+    border: none;
+}
+
+.cart-item {
+    flex-wrap: wrap;
+}
+
+.hero-info p {
+    width: 70%;
+    max-width: unset;
+}
+
+.info-card {
+    width: 100%;
+    height: 350px;
+    justify-content: center;
+}
+
+.info-card p {
+    width: 90%;
+}
+
+#discover {
+    width: 80%;
+}
+
+#discover h2 {
+    font-size: 40px;
+    width: 100%;
+}
+
+.discover-text {
+    width: 100%;
+    padding: 10px;
+    line-height: 30px;
+    gap: 50px;
+}
+
+.dicover-text a {
+    font-size: 20px;
+}
+
+.discover-cards {
+    gap: 20px;
+}
+
+.discover-cards img {
+    width: 100%;
+}
+
+
+
+
+/* sección productos */
+
+.categories {
+    max-width: 300px;
+    justify-content: center;
+    align-items: center;
+}
+
+.category {
+    width: 120px;
+}
+
+.products-container {
+    width: 80%;
+}
+
+.product {
+    width: 100%;
+}
+
+
+
+/* footer*/
+
+.footer-links {
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+    
+    }
